@@ -23,7 +23,7 @@ github_username:  svunit
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
