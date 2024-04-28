@@ -48,8 +48,15 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: single
       author_profile: true
       show_date: true
       classes: wide
       comments: true
       share: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
