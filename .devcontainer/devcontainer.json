@@ -19,7 +19,14 @@
 	"postCreateCommand": "sh .devcontainer/post-create.sh",
 
 	// Fix issue with Git under Windows
-	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"streetsidesoftware.code-spell-checker"
+			]
+		}
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},
