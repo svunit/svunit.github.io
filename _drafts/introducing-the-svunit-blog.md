@@ -14,7 +14,10 @@ I'll use the blog primarily to announce new releases.
 If a new release adds a really cool new feature,
 I'd like to highlight it and maybe show an example of how to use it.
 
+I'd also like to maybe write about plans for future additions,
+be they new features, bug fixes or internal cleanups.
+It would also be nice to occasionally share some insight into what's being worked on at that moment.
+
 - mention that it is used for:
-    - discuss about plans and what's being worked on
     - asking for feedback
     - help in running with tools I don't have access to
