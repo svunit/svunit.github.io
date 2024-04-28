@@ -2,7 +2,13 @@
 title: "Introducing the SVUnit Blog"
 ---
 
-- introduce blog
+Every now and then,
+I find myself wanting to do various announcements related to SVUnit.
+I've been using LinkedIn and Twitter,
+but these aren't really the ideal platforms for this.
+A blog is much better.
+
+Without further ado, I would like to introduce the SVUnit blog.
 
 - mention that it is used for:
     - announcing releases
