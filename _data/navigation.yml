@@ -3,3 +3,5 @@ main:
     url: /about/
   - title: "Dummy"
     url: /dummy/
+  - title: "Docs"
+    url: https://docs.svunit.org
