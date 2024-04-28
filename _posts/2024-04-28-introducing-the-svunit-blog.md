@@ -1,5 +1,6 @@
 ---
 title: "Introducing the SVUnit Blog"
+date: 2024-04-28 19:56:00 +0200
 ---
 
 Every now and then,
