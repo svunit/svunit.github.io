@@ -36,6 +36,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - CONTRIBUTING.md
 
 include:
   - _pages
