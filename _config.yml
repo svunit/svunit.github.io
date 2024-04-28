@@ -41,3 +41,15 @@ plugins:
 
 include:
   - _pages
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author_profile: true
+      show_date: true
+      classes: wide
+      comments: true
+      share: true
