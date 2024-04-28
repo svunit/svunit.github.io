@@ -1,7 +1,5 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Dummy"
-    url: /dummy/
   - title: "Docs"
     url: https://docs.svunit.org
