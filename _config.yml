@@ -20,7 +20,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: SVUnitTeam
-github_username:  svunit
 
 # Build settings
 markdown: kramdown
@@ -61,3 +60,9 @@ defaults:
       type: pages
     values:
       layout: single
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/SVUnit"
