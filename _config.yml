@@ -17,7 +17,7 @@ title: SVUnit
 subtitle: &subtitle_value A unit testing framework for SystemVerilog
 description: *subtitle_value
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://svunit.org"
 twitter_username: SVUnitTeam
 
 # Build settings
