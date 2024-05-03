@@ -98,6 +98,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.2.2)
   jekyll-feed (~> 0.6)
+  jekyll-sitemap (~> 1.4)
   minimal-mistakes-jekyll (~> 4.25)
   tzinfo (~> 1.2)
   tzinfo-data

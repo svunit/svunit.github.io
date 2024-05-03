@@ -24,6 +24,7 @@ markdown: kramdown
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 exclude:
   - CONTRIBUTING.md
