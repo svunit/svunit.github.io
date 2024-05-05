@@ -9,9 +9,28 @@ I'm still not sure about how to best use discussions
 (though GitHub does provide a list of [best practices](https://docs.github.com/en/discussions/guides/best-practices-for-community-conversations-on-github) for them),
 but I kind of like the idea of keeping conversations and issues separate.
 
-- mention fix w.r.t. filtered tests, link to issue
-  - long time coming
-  - difficult to implement so kept putting it off
+One of the main things I wanted to get into this release was a fix related to the `--filter` option.
+Even when filtering out all tests from a unit test module,
+SVUnit would still print messages related to these modules ([svunit/svunit#207](https://github.com/svunit/svunit/issues/207)).
+For example, assuming that we ran `runSVUnit --filter 'interesting_ut.*'`,
+we would get something like:
+
+```
+INFO:  [0][some_filtered_out_ut]: RUNNING
+INFO:  [0][some_other_filtered_out_ut]: RUNNING
+INFO:  [0][interesting_ut]: RUNNING
+... tests from interesting_ut ...
+INFO:  [0][some_filtered_out_ut]: PASSED (0 of 0 tests passing)
+INFO:  [0][some_other_filtered_out_ut]: PASSED (0 of 0 tests passing)
+INFO:  [0][interesting_ut]: PASSED (5 of 5 tests passing)
+```
+
+With many unit tests,
+a lot of extraneous log output was printed,
+which made it difficult to find the real tests.
+The fix for this was long overdue,
+but since it wasn't trivial to implement,
+I kept putting it off.
 
 - mention listing tests before running them
   - good way to get familiar with the code I inherited
