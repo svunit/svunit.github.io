@@ -2,8 +2,12 @@
 title: "Version 3.38.0 Released"
 ---
 
-- announce and link to release on GitHub
-  - link to discussions page
+I'm happy to announce the release of [version 3.38.0](https://github.com/svunit/svunit/releases/tag/v3.38.0).
+You can find the full (but fairly modest) changelog at the previous link.
+I've also created a [GitHub discussion](https://github.com/svunit/svunit/discussions/309) for it.
+I'm still not sure about how to best use discussions
+(though GitHub does provide a list of [best practices](https://docs.github.com/en/discussions/guides/best-practices-for-community-conversations-on-github) for them),
+but I kind of like the idea of keeping conversations and issues separate.
 
 - mention fix w.r.t. filtered tests, link to issue
   - long time coming
