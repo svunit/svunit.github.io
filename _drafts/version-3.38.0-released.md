@@ -44,10 +44,31 @@ The pull request is not the prettiest,
 because it contains a lot of duplication,
 but this was something to be handled later.
 
-- mention reworking how tests are declared and executed
-  - noticed while working on previous PR, but want to split changes to behavior from changes to structure
-  - test suite was invaluable here to make sure everything still works
-  - mention add stuff that now it's possible to add code between `` `SVTESTs ``, show example of util function
+I did some major renovations,
+by splitting the declaration of `` `SVTESTs `` from their execution ([svunit/svunit#301](https://github.com/svunit/svunit/pull/301)).
+The need for this became apparent while implementing `--list-tests`,
+where we really just want to get the tests that are declared.
+I didn't do this in the same pull request,
+in order to split the change to behavior (adding `--list-tests`)
+from the change to structure (moving code out of the `` `SVTEST `` and `` `SVTEST_END `` macros).
+This is good advice I got from [this article by Kent Beck](https://tidyfirst.substack.com/p/structure-and-behavior-prs).
+Also, the test suite for verifying SVUnit itself was invaluable
+in making sure that the code still worked as before.
+A happy side effect of this change is
+that it's now possible to add arbitrary code between `` `SVTESTs ``.
+This is extremely useful for grouping tests and auxiliary code together:
+
+```
+class some_fake;
+  // ...
+endclass
+
+`SVTEST(some_test)
+  some_fake dependency;
+  class_under_test uut = new(dependency);
+  // ...
+`SVTEST_END
+```
 
 - mention PR with refactoring
   - define refactoring, as it is wrongly used within industry
