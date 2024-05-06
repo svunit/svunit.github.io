@@ -82,8 +82,14 @@ Each commit in this pull request makes a small, purely structural change to the 
 that could be validated by simple inspection,
 though the project's test suite again helped a lot to ensure that nothing broke.
 
-- mention PR with implementation of fix
-  - "implement a difficult change, first make it easy, then make the change"
+In the end,
+I built up the courage to fix what I mentioned at the beginning of the post.
+SVUnit no longer prints `RUNNING` for modules that don't contain any selected tests ([svunit/svunit#304](https://github.com/svunit/svunit/pull/304)).
+At this point,
+fixing this was a breeze,
+because I applied another piece of advice from Kent Beck,
+on how to deal with difficult changes:
+"make the change easy, then make the easy change".
 
 - mention support for Vivado
   - praise that it works very well and that it's also free
