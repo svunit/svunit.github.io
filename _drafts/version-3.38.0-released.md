@@ -70,9 +70,17 @@ endclass
 `SVTEST_END
 ```
 
-- mention PR with refactoring
-  - define refactoring, as it is wrongly used within industry
-  - small steps
+I'm kind of proud of a small pull request I did
+which refactored some code related to listing tests ([svunit/svunit#303](https://github.com/svunit/svunit/pull/303))
+and which I feel has educational value.
+First, I think it's necessary to highlight that [refactoring](https://refactoring.com/) means
+"altering [code's] internal structure without changing its external behavior".
+I mention this,
+because the term is very often used wrongly within our industry to refer to any kind of "major" change,
+especially to those that also sneak in some tweaks to behavior.
+Each commit in this pull request makes a small, purely structural change to the code,
+that could be validated by simple inspection,
+though the project's test suite again helped a lot to ensure that nothing broke.
 
 - mention PR with implementation of fix
   - "implement a difficult change, first make it easy, then make the change"
