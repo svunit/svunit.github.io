@@ -91,8 +91,12 @@ because I applied another piece of advice from Kent Beck,
 on how to deal with difficult changes:
 "make the change easy, then make the easy change".
 
-- mention support for Vivado
-  - praise that it works very well and that it's also free
+I'd like to add that SVUnit now also has support for the Vivado simulator.
+I was very positively surprised by how good the tool is,
+especially considering that AMD offers it for free.
+If I could figure out the legal and technical aspects of how to do it,
+I would gladly use it in the GitHub workflow, alongside Verilator,
+to continuously test the project. Ideas are welcome.
 
 - end with:
   - mention that I haven't run on VCS, Riviera or DSim
