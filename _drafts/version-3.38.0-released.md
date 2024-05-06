@@ -32,10 +32,17 @@ The fix for this was long overdue,
 but since it wasn't trivial to implement,
 I kept putting it off.
 
-- mention listing tests before running them
-  - good way to get familiar with the code I inherited
-  - a lot of duplication initially, but works
-  - link to PR
+Before tackling the main fix,
+I wanted to work on something easier,
+but somehow connected to it.
+Inspired by [GoogleTest](https://google.github.io/googletest/advanced.html#listing-test-names),
+I added a new `--list-tests` option to `runSVUnit`,
+which is a good companion to the `--filter` option.
+This new option just lists test names without actually running them ([svunit/svunit#299](https://github.com/svunit/svunit/pull/299)).
+Implementing it was a good way to get familiar with the code related to test execution that I inherited.
+The pull request is not the prettiest,
+because it contains a lot of duplication,
+but this was something to be handled later.
 
 - mention reworking how tests are declared and executed
   - noticed while working on previous PR, but want to split changes to behavior from changes to structure
