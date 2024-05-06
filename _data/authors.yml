@@ -1,0 +1,11 @@
+Tudor Timi:
+  name: "Tudor Timi"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Verification Engineer by day, Verification Gentleman by night."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tudortimi"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/TudorTimi"
