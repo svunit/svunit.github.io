@@ -98,6 +98,10 @@ If I could figure out the legal and technical aspects of how to do it,
 I would gladly use it in the GitHub workflow, alongside Verilator,
 to continuously test the project. Ideas are welcome.
 
-- end with:
-  - mention that I haven't run on VCS, Riviera or DSim
-  - link to issues page
+Speaking of testing,
+I couldn't run the test suite on VCS, Riviera or DSim.
+If you have access to any of these tools,
+I would be very grateful if you could check whether this release works on it and report back.
+
+If you try out this release and find any bugs,
+please report them on the project's [GitHub Issues section](https://github.com/svunit/svunit/issues).
